@@ -22,3 +22,5 @@
   - php70w-pecl-apcu
   - php70w-pecl-imagick
   - php70w-fpm
+  notify:
+  - restart php-fpm
