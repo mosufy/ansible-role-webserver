@@ -15,8 +15,12 @@
 - name: Install all updates
   yum: name=* state=latest
 
-- include: php56-extensions.yml
-  when: php_version == 56
+- include: php56-memcached.yml
+  when:
+    - php_version == 56
+    - install_php_memcached == true
 
-- include: php70-extensions.yml
-  when: php_version == 70
+- include: php70-memcached.yml
+  when:
+    - php_version == 70
+    - install_php_memcached == true

@@ -3,3 +3,4 @@
 
 php_version: 56
 app_env: dev
+install_php_memcached: true
