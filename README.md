@@ -6,10 +6,19 @@ This role will build a basic web server.
 Role Variables
 --------------
 
-- **php_version**  
-  Specify the php version to install
-- **app_env**  
-  Specify the environment this build should run as
+Available variables are listed below, along with default values (see `defaults/main.yml`):
+
+    php_version: 70
+
+Specify the php version to install
+
+    app_env: dev
+
+Specify the environment this build should run as
+
+    install_php_memcached: true
+
+Determine if required to install php-memcached
 
 Example Playbook
 ----------------
